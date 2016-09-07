@@ -34,12 +34,12 @@ module.exports = {
     }
   },
 
-  production: {
+  production: process.env.DATABASE_URL || {
     client: 'postgresql',
     connection: {
-      database: 'dictionary',
-      user:     'tester',
-      password: 'kupuhuna'
+      database: 'my_db',
+      user:     'username',
+      password: 'password'
     },
     pool: {
       min: 2,
