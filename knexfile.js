@@ -7,7 +7,7 @@ module.exports = {
     connection: {
       // look for real db and username on my local machine
       database: 'dictionary',
-      user:     'username',
+      user:     'tester',
       password: 'kupuhuna'
     },
     pool: {
@@ -23,8 +23,8 @@ module.exports = {
     client: 'postgresql',
     connection: {
       // look for real db and username on my local machine
-      database: 'my_db',
-      user:     'username',
+      database: 'dictionary',
+      user:     'tester',
       password: 'kupuhuna'
     },
     pool: {
