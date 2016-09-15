@@ -12,5 +12,6 @@ function getVersion101() {
 }
 
 module.exports = {
-  all: all
+  getVersion1: getVersion1,
+  getVersion101: getVersion101
 }

@@ -4,7 +4,7 @@ var router = express.Router();
 var translations = require('../../models/translations')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/1.0', function(req, res, next) {
   translations.getVersion1()
     .then(function(translations) {
       res.json(translations);
@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
     })
 });
 
-router.get('/01', function(req, res, next) {
+router.get('/1.1', function(req, res, next) {
   translations.getVersion101()
     .then(function(translations) {
       res.json(translations);
