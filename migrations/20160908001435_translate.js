@@ -4,8 +4,6 @@ exports.up = function(knex, Promise) {
         table.increments('id').primary()
         table.string('maori')
         table.string('english')
-        table.string('maori_sentence')
-        table.string('english_sentence')
       })
     ])
 };
